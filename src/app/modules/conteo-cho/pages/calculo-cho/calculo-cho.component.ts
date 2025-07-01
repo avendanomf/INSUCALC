@@ -124,9 +124,21 @@ export class CalculoChoComponent implements OnInit {
     try {
       this.validarParametros();
       if (this.glucometrias.nivelGlucosa != undefined && this.glucometrias.nivelGlucosa != 0) {
+        if (this.glucometrias.nivelGlucosa > this.parameter.glucoMin && this.glucometrias.nivelGlucosa < this.parameter.gluMax) {
+          this.utilsSvc.presentToast({
+            message: 'Nivel de glucosa en rango',
+            duration: 5500,
+            color: 'primary',
+            position: 'middle',
+            icon: 'alert-circle-outline'
+          });
+          this.insulinas.insulinaGlucometria = 0;
+        }
+        else{
         this.insulinas.insulinaGlucometria = this.roundToTwo(
           (this.glucometrias.nivelGlucosa - this.parameter.glucoMeta) / this.parameter.Sensibilidad
         );
+        }
       }
       if (this.insulinas.insulinaCHO != undefined && this.insulinas.insulinaGlucometria != undefined) {
         this.insulinas.insulinaTotal = Math.round(this.insulinas.insulinaCHO + this.insulinas.insulinaGlucometria);

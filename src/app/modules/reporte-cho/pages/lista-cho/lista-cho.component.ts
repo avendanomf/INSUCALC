@@ -122,14 +122,14 @@ export class ListaChoComponent implements OnInit {
         today.setHours(0, 0, 0, 0); // Setear la hora a 00:00:00.000
         this.fechaInicio = today;
         this.fechaFin = today;
-      }
+    }
 
-      getTotalCaloriasComida(registro: FormRegistro): number {
+    getTotalCaloriasComida(registro: FormRegistro): number {
         if (!registro.tblComida) return 0;
         return registro.tblComida.reduce((total, comida) => total + (Number(comida.caloriasPorcion) || 0), 0);
-      }
+    }
 
-      getTotalChoDia(registros: FormRegistro[]): number {
+    getTotalChoDia(registros: FormRegistro[]): number {
         return registros.reduce((total, reg) => total + (Number(reg.totalCho) || 0), 0);
     }
     getTotalCaloriasDia(registros: FormRegistro[]): number {
@@ -139,15 +139,15 @@ export class ListaChoComponent implements OnInit {
         return registros.reduce((total, reg) => total + (reg.tblInsulinas?.[0]?.insulinaTotal || 0), 0);
     }
 
-      keyDesc = (a: any, b: any): number => {
+    keyDesc = (a: any, b: any): number => {
         // Extrae la fecha de la clave (antes del "_")
         const fechaA = a.key.split('_')[0];
         const fechaB = b.key.split('_')[0];
         // Ordena descendente
         return fechaA < fechaB ? 1 : fechaA > fechaB ? -1 : 0;
-      };
+    };
 
-      getColorClass(value: number, type: 'cho' | 'calorias' | 'insulina'): string {
+    getColorClass(value: number, type: 'cho' | 'calorias' | 'insulina'): string {
         // Puedes ajustar estos rangos según tus necesidades reales
         let min = 0, max = 0;
         if (type === 'cho') { min = 0; max = 200; }
@@ -158,9 +158,12 @@ export class ListaChoComponent implements OnInit {
         if (percent < 0.33) return 'valor-verde';
         if (percent < 0.66) return 'valor-amarillo';
         return 'valor-rojo';
-      }
+    }
 
-      toggleAcordeon(index: number) {
+    toggleAcordeon(index: number) {
         this.acordeonAbierto[index] = !this.acordeonAbierto[index];
-      }
+    }
+    roundToTwo(num: number): number {
+        return Math.round((num + Number.EPSILON) * 100) / 100;
+    }
 }
