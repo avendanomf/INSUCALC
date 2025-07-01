@@ -6,6 +6,7 @@
           <th>Alimento</th>
           <th>Peso (g)</th>
           <th>CHO</th>
+          <th>Calorías</th>
           <th>Acciones</th>
         </tr>
       </thead>
@@ -14,6 +15,7 @@
           <td>{{ fila.name }}</td>
           <td>{{ fila.pesoGramos }}</td>
           <td>{{ fila.gramosCarbohidratos }}</td>
+          <td>{{ fila.caloriasPorcion }}</td>
           <td>
             <ion-button color="danger" (click)="quitarFila(i)" size="small" fill="outline">
               <ion-icon name="trash-outline"></ion-icon>
@@ -34,7 +36,6 @@
 
 <ion-modal [isOpen]="isModalOpen" (willDismiss)="closeModal()" cssClass="custom-modal">
   <ng-template>
-
     <ion-header>
       <ion-toolbar>
         <ion-title>Agregar Alimento</ion-title>
@@ -44,54 +45,89 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <div class="segment-container-div">
-        <ion-item lines="none">
-          <ion-label position="stacked">Alimento:</ion-label>
+      <ion-segment [(ngModel)]="selectedOption">
+        <ion-segment-button value="buscar">
+          <ion-label>Buscar Alimento</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="manual">
+          <ion-label>Otro</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Contenido para la opción de búsqueda de alimentos -->
+      <div *ngIf="selectedOption === 'buscar'">
+        <div class="segment-container-div">
+          <ion-item lines="none">
+            <ion-label position="stacked">Alimento:</ion-label>
+            <br>
+            <div [ngClass]="{'segment-container-input': true, 'error': !newFila.name}">
+              <ion-searchbar color="light" [debounce]="1000" animated="true" (ionInput)="handleInput($event)"
+                [(ngModel)]="searchQuery" placeholder="Buscar Alimento" show-cancel-button="never"></ion-searchbar>
+            </div>
+          </ion-item>
           <br>
-          <div [ngClass]="{'segment-container-input': true, 'error': !newFila.name}">
-            <ion-searchbar color="light" [debounce]="1000" animated="true" (ionInput)="handleInput($event)"
-              [(ngModel)]="searchQuery" placeholder="Buscar Alimento" show-cancel-button="never"></ion-searchbar>
+          <ion-list class="autocomplete-container" *ngIf="showResults">
+            <ion-item *ngFor="let result of results" (click)="selectResult(result)">
+              <ion-label>{{ result.name }}</ion-label>
+            </ion-item>
+          </ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-item lines="none">
+                  <ion-label position="stacked">Peso recomendado:</ion-label>
+                  <br>
+                  <ion-input type="number" [(ngModel)]="newFila.pesoTabla" readonly></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6">
+                <ion-item lines="none">
+                  <ion-label position="stacked">Cho recomendado:</ion-label>
+                  <br>
+                  <ion-input type="number" [(ngModel)]="newFila.choTabla" readonly></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <ion-item lines="none">
+          <ion-label position="stacked">Peso (g):</ion-label>
+          <br>
+          <div [ngClass]="{'segment-container-input': true, 'error': !newFila.pesoGramos}">
+            <ion-input 
+              type="number" 
+              placeholder="000" 
+              (ionInput)="calcularCHO(newFila)"
+              [(ngModel)]="newFila.pesoGramos" 
+              required>
+            </ion-input>
           </div>
         </ion-item>
-        <br>
-        <ion-list class="autocomplete-container" *ngIf="showResults">
-          <ion-item *ngFor="let result of results" (click)="selectResult(result)">
-            <ion-label>{{ result.name }}</ion-label>
-          </ion-item>
-        </ion-list>
-        <ion-grid>
-          <ion-row>
-            <ion-col size="6">
-              <ion-item lines="none">
-                <ion-label position="stacked">Peso recomendado:</ion-label>
-                <br>
-                <ion-input type="number" [(ngModel)]="newFila.pesoTabla" readonly></ion-input>
-              </ion-item>
-            </ion-col>
-            <ion-col size="6">
-              <ion-item lines="none">
-                <ion-label position="stacked">Cho recomendado:</ion-label>
-                <br>
-                <ion-input type="number" [(ngModel)]="newFila.choTabla" readonly></ion-input>
-              </ion-item>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
       </div>
-      <ion-item lines="none">
-        <ion-label position="stacked">Peso (g):</ion-label>
+
+      <!-- Contenido para la opción de ingreso manual -->
+      <div *ngIf="selectedOption === 'manual'">
+        <ion-item lines="none">
+          <ion-label position="stacked">Descripción:</ion-label>
+          <ion-input type="text" [(ngModel)]="newFila.name" placeholder="Descripción del alimento"></ion-input>
+        </ion-item>
         <br>
-        <div [ngClass]="{'segment-container-input': true, 'error': !newFila.pesoGramos}">
-          <ion-input 
-            type="number" 
-            placeholder="000" 
-            (ionInput)="calcularCHO(newFila)"
-            [(ngModel)]="newFila.pesoGramos" 
-            required
-            >
-          </ion-input>
-        </div>
-      </ion-item>
+        <ion-item lines="none">
+          <ion-label position="stacked">Peso (g):</ion-label>
+          <ion-input type="number" [(ngModel)]="newFila.pesoGramos" placeholder="Peso en gramos"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item lines="none">
+          <ion-label position="stacked">CHO (g):</ion-label>
+          <ion-input type="number" [(ngModel)]="newFila.gramosCarbohidratos" placeholder="Cantidad de CHO"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item lines="none">
+          <ion-label position="stacked">Calorías:</ion-label>
+          <ion-input type="number" [(ngModel)]="newFila.caloriasPorcion" placeholder="Cantidad de calorías"></ion-input>
+        </ion-item>
+      </div>
+
       <br>
       <ion-button expand="block" (click)="addFila()">Agregar</ion-button>
     </ion-content>

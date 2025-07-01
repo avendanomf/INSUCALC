@@ -4,979 +4,1263 @@
     "tamanio": "¼ unidad pequeña",
     "peso": 80,
     "gramos": 3.5,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 128
   },
   {
     "name": "Anón",
     "tamanio": "1 unidad pequeña",
     "peso": 150,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 95
   },
   {
     "name": "Banano comun",
     "tamanio": "½ unidad mediana",
     "peso": 100,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 89
   },
   {
     "name": "Banano bocadillo",
     "tamanio": "½ unidad mediana",
     "peso": 65,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 58
   },
   {
     "name": "Cerezas",
     "tamanio": "15 unidades",
     "peso": 65,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 41
   },
   {
     "name": "Chirimoya",
     "tamanio": "½ unidad mediana",
     "peso": 150,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 111
   },
   {
     "name": "Chontaduro",
     "tamanio": "1 unidad pequeña",
     "peso": 27,
     "gramos": 10,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 80
   },
   {
     "name": "Ciruela comun",
     "tamanio": "3 unidades pequeñas",
     "peso": 70,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 32
   },
   {
     "name": "Ciruela Importada",
     "tamanio": "1 unidad mediana",
     "peso": 116,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 54
   },
   {
     "name": "Ciruela pasa",
     "tamanio": "3 unidades pequeñas",
     "peso": 25,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 66
   },
   {
     "name": "Coco",
     "tamanio": "3 cdas postreras",
     "peso": 15,
     "gramos": 2,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 99
   },
   {
     "name": "Curuba",
     "tamanio": "6 unidades medianas",
     "peso": 238,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 80
   },
   {
     "name": "Durazno nacional",
     "tamanio": "2 unidades pequeñas",
     "peso": 147,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 58
   },
   {
     "name": "Durazno importado",
     "tamanio": "1 unidad mediana",
     "peso": 130,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 50
   },
   {
     "name": "Feijoa",
     "tamanio": "2 unidades medianas",
     "peso": 125,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 55
   },
   {
     "name": "Frambuesa",
     "tamanio": "1 taza (6 unidades)",
     "peso": 210,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 108
   },
   {
     "name": "Fresa",
     "tamanio": "13 unidades pequeñas",
     "peso": 210,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 66
   },
   {
     "name": "Granadilla",
     "tamanio": "1 unidad mediana",
     "peso": 130,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 70
   },
   {
     "name": "Guayaba",
     "tamanio": "1 unidad mediana",
     "peso": 120,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 68
   },
   {
     "name": "Guanábana",
     "tamanio": "6 cdas soperas rasas",
     "peso": 170,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 110
   },
   {
     "name": "Higo",
     "tamanio": "2 unidades medianas",
     "peso": 110,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 74
   },
   {
     "name": "Kiwi",
     "tamanio": "2 unidades medianas",
     "peso": 100,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 61
   },
   {
     "name": "Mandarina",
     "tamanio": "1 unidad mediana",
     "peso": 150,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 80
   },
   {
     "name": "Mango azúcar",
     "tamanio": "1 unidad pequeña",
     "peso": 165,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 99
   },
   {
     "name": "Mango tommy",
     "tamanio": "¾ taza / 5 tajadas",
     "peso": 85,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 57
   },
   {
     "name": "Manzana",
     "tamanio": "1 unidad pequeña",
     "peso": 100,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 52
   },
   {
     "name": "Melón",
     "tamanio": "2 tajadas",
     "peso": 180,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 64
   },
   {
     "name": "Moras",
     "tamanio": "12 unidades",
     "peso": 125,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 57
   },
   {
     "name": "Níspero sin semillas",
     "tamanio": "2 unidades pequeñas",
     "peso": 110,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 44
   },
   {
     "name": "Naranja",
     "tamanio": "1 unidad pequeña",
     "peso": 120,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 62
   },
   {
     "name": "Pomelo",
     "tamanio": "1 unidad",
     "peso": 200,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 76
   },
   {
     "name": "Papaya",
     "tamanio": "1 taza picada",
     "peso": 150,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 59
   },
   {
     "name": "Pera",
     "tamanio": "1 unidad mediana",
     "peso": 100,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 57
   },
   {
     "name": "Piña",
     "tamanio": "1 tajada delgada",
     "peso": 120,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 60
   },
   {
     "name": "Pitahaya",
     "tamanio": "1 unidad mediana",
     "peso": 220,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 80
   },
   {
     "name": "Sandia/Patilla",
     "tamanio": "1 tajada delgada",
     "peso": 210,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 63
   },
   {
     "name": "Tamarindo",
     "tamanio": "1 ½ cdas soperas",
     "peso": 50,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 143
   },
   {
     "name": "Tomate de árbol",
     "tamanio": "2 unidades medianas",
     "peso": 335,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 110
   },
   {
     "name": "Toronja",
     "tamanio": "1 unidad grande",
     "peso": 335,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 128
   },
   {
     "name": "Uchuva",
     "tamanio": "12 unidades pequeñas",
     "peso": 70,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 49
   },
   {
     "name": "Uva nacional",
     "tamanio": "20 unidades",
     "peso": 180,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 124
   },
   {
     "name": "Uva negra",
     "tamanio": "16 unidades",
     "peso": 80,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 69
   },
   {
     "name": "Zapote",
     "tamanio": "1 unidad mediana",
     "peso": 400,
     "gramos": 15,
-    "categoria": "FRUTAS"
+    "categoria": "FRUTAS",
+    "calorias": 184
   },
   {
     "name": "Verdura cocida",
     "tamanio": "1 taza",
     "peso": 180,
     "gramos": 10,
-    "categoria": "VERDURAS"
+    "categoria": "VERDURAS",
+    "calorias": 64
   },
   {
     "name": "Verdura cruda",
     "tamanio": "1 taza",
     "peso": 100,
     "gramos": 5,
-    "categoria": "VERDURAS"
+    "categoria": "VERDURAS",
+    "calorias": 35
   },
   {
     "name": "Almojabana",
     "tamanio": "1 unidad mediana",
     "peso": 100,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 330
   },
   {
     "name": "Amaranto cocido",
     "tamanio": "8 cdas soperas cocidas",
     "peso": 80,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 102
   },
   {
     "name": "Arepa de maíz blanco o amarillo",
     "tamanio": "1 unidad del tamaño de un CD",
     "peso": 80,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 160
   },
   {
     "name": "Arepa paisa",
     "tamanio": "1 unidad del tamaño de un CD",
     "peso": 50,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 100
   },
   {
     "name": "Arepa redonda pequeña",
     "tamanio": "1 unidad del tamaño de un CD",
     "peso": 50,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 100
   },
   {
     "name": "Arroz cocido",
     "tamanio": "½ taza",
     "peso": 50,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 64
   },
   {
     "name": "Arroz integral",
     "tamanio": "1 taza",
     "peso": 65,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 82
   },
   {
     "name": "Avena cruda en hojuelas",
     "tamanio": "3 cdas soperas rasas",
     "peso": 20,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 78
   },
   {
     "name": "Buñuelo",
     "tamanio": "1 unidad mediana",
     "peso": 80,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 320
   },
   {
     "name": "Cereal integral nestle",
     "tamanio": "1 taza",
     "peso": 35,
     "gramos": 29,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 130
   },
   {
     "name": "Cereal Corn Flakes",
     "tamanio": "½ taza",
     "peso": 20,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 75
   },
   {
     "name": "Cebada perlada cocida",
     "tamanio": "3 cdas soperas rasas",
     "peso": 30,
     "gramos": 24,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 99
   },
   {
     "name": "Croissant (mantequilla o queso)",
     "tamanio": "1 unidad mediana",
     "peso": 70,
     "gramos": 33,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 290
   },
   {
     "name": "Empanada",
     "tamanio": "1 unidad mediana",
     "peso": 52,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 220
   },
   {
     "name": "Envuelto de mazorca",
     "tamanio": "1 unidad mediana",
     "peso": 100,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 170
   },
   {
     "name": "Fécula de maíz",
     "tamanio": "4 cdas soperas rasas",
     "peso": 30,
     "gramos": 24,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 106
   },
   {
     "name": "Galletas (saltinas e integral)",
     "tamanio": "3 unidades",
     "peso": 20,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 92
   },
   {
     "name": "Granola",
     "tamanio": "½ taza",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 130
   },
   {
     "name": "Harina de trigo",
     "tamanio": "3 cdas soperas rasas",
     "peso": 20,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 68
   },
   {
     "name": "Maíz pira (preparado)",
     "tamanio": "3 tazas",
     "peso": 80,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 106
   },
   {
     "name": "Mantecada, ponqué, torta sin dulce",
     "tamanio": "1 tajada mediana",
     "peso": 65,
     "gramos": 35,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 240
   },
   {
     "name": "Mazorca cocida",
     "tamanio": "1 unidad grande",
     "peso": 150,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 138
   },
   {
     "name": "Mazorca desgranada",
     "tamanio": "3 cdas soperas rasa",
     "peso": 50,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 46
   },
   {
     "name": "Mogolla",
     "tamanio": "1 unidad",
     "peso": 30,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 110
   },
   {
     "name": "Pan blanco, integral, centeno",
     "tamanio": "1 tajada mediana",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 78
   },
   {
     "name": "Pan blandito o rollo (panaderia)",
     "tamanio": "1 unidad pequeña",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 85
   },
   {
     "name": "Pancake",
     "tamanio": "1 unidad del tamaño de un CD",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 90
   },
   {
     "name": "Pan perro",
     "tamanio": "1 unidad mediana",
     "peso": 68,
     "gramos": 35,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 190
   },
   {
     "name": "Pan hamburguesa",
     "tamanio": "1 unidad mediana",
     "peso": 92,
     "gramos": 45,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 240
   },
   {
     "name": "Pan de bono",
     "tamanio": "1 unidad mediana",
     "peso": 40,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 130
   },
   {
     "name": "Pan de yuca",
     "tamanio": "1 unidad grande",
     "peso": 70,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 220
   },
   {
     "name": "Pan pita",
     "tamanio": "1 unidad del tamaño de un CD",
     "peso": 50,
     "gramos": 30,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 165
   },
   {
     "name": "Pasta",
     "tamanio": "1 taza",
     "peso": 55,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 105
   },
   {
     "name": "Pasta integral",
     "tamanio": "1 taza",
     "peso": 70,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 115
   },
   {
     "name": "Tostada o calado",
     "tamanio": "1 unidad pequeña",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 120
   },
   {
     "name": "Tortilla mexicana",
     "tamanio": "1 unidad mediana",
     "peso": 30,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 90
   },
   {
     "name": "Taco mexicano (sin relleno)",
     "tamanio": "1 unidad",
     "peso": 13,
     "gramos": 8,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 50
   },
   {
     "name": "Quinoa cocida",
     "tamanio": "7 cdas soperas rasas",
     "peso": 70,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 120
   },
   {
     "name": "Waffle",
     "tamanio": "1 unidad mediana (6 cm de grosor)",
     "peso": 45,
     "gramos": 15,
-    "categoria": "CEREALES Y DERIVADOS"
+    "categoria": "CEREALES Y DERIVADOS",
+    "calorias": 150
   },
   {
     "name": "Arracacha",
     "tamanio": "½ unidad mediana",
     "peso": 75,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 55
   },
   {
     "name": "Papa común",
     "tamanio": "1 unidad mediana",
     "peso": 80,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 62
   },
   {
     "name": "Papa criolla",
     "tamanio": "3 unidades pequeñas",
     "peso": 80,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 74
   },
   {
     "name": "Papa francesa",
     "tamanio": "10 unidades delgadas",
     "peso": 48,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 110
   },
   {
     "name": "Plátano colí con cáscara",
     "tamanio": "1 unidad pequeña",
     "peso": 145,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 120
   },
   {
     "name": "Plátano Hartón",
     "tamanio": "¼ unidad o 2 tajadas medianas",
     "peso": 40,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 55
   },
   {
     "name": "Puré de papa",
     "tamanio": "2 bolas medianas",
     "peso": 70,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 55
   },
   {
     "name": "Láminas de plátano verde",
     "tamanio": "10 láminas o moneditas delgadas",
     "peso": 30,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 115
   },
   {
     "name": "Ñame",
     "tamanio": "1 trozo mediano",
     "peso": 67,
     "gramos": 15,
-    "categoria": "TUBERCULOS Y PLÁTANOS"
+    "categoria": "TUBERCULOS Y PLÁTANOS",
+    "calorias": 70
   },
   {
     "name": "Almendras",
     "tamanio": "½ taza",
     "peso": 60,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 350
   },
   {
     "name": "Arveja seca cocida",
     "tamanio": "½ taza",
     "peso": 70,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 115
   },
   {
     "name": "Frijol blanco cocido",
     "tamanio": "½ taza",
     "peso": 60,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 105
   },
   {
     "name": "Frijol rojo cocido",
     "tamanio": "½ taza",
     "peso": 60,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 105
   },
   {
     "name": "Frijol blanco cabeza negra",
     "tamanio": "½ taza",
     "peso": 70,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 115
   },
   {
     "name": "Garbanzo cocido",
     "tamanio": "½ taza",
     "peso": 55,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 135
   },
   {
     "name": "Lenteja cocida",
     "tamanio": "½ taza",
     "peso": 75,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 120
   },
   {
     "name": "Maní",
     "tamanio": "½ taza",
     "peso": 70,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 400
   },
   {
     "name": "Soya cocida",
     "tamanio": "½ taza",
     "peso": 150,
     "gramos": 15,
-    "categoria": "LEGUMINOSAS"
+    "categoria": "LEGUMINOSAS",
+    "calorias": 150
   },
   {
     "name": "Avena finesse",
     "tamanio": "1 vaso",
     "peso": 250,
     "gramos": 15,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 165
   },
   {
     "name": "Kumis",
     "tamanio": "1 vaso",
     "peso": 100,
     "gramos": 15,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 75
   },
   {
     "name": "Leche entera",
     "tamanio": "1 vaso",
     "peso": 200,
     "gramos": 15,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 125
   },
   {
     "name": "Leche semi o descremada",
     "tamanio": "1 vaso",
     "peso": 300,
     "gramos": 15,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 105
   },
   {
     "name": "Leche deslactosada",
     "tamanio": "1 vaso",
     "peso": 200,
     "gramos": 15,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 120
   },
   {
     "name": "Leche en polvo entera",
     "tamanio": "3 cdas colmadas",
     "peso": 27,
     "gramos": 10,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 135
   },
   {
     "name": "Leche soya sin azúcar",
     "tamanio": "1 vaso",
     "peso": 100,
     "gramos": 4,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 35
   },
   {
     "name": "Yogurt finesse",
     "tamanio": "1 vaso",
     "peso": 180,
     "gramos": 11,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 85
   },
   {
     "name": "Yogurt Slight (Colanta)",
     "tamanio": "1 vaso",
     "peso": 200,
     "gramos": 12,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 90
   },
   {
     "name": "Yogurt Benecol",
     "tamanio": "1 vaso pequeño",
     "peso": 100,
     "gramos": 4,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 50
   },
   {
     "name": "Yogurt Pasco sin azúcar",
     "tamanio": "1 vaso",
     "peso": 150,
     "gramos": 5,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 60
   },
   {
     "name": "Yogurt Slim “Doña Leche”",
     "tamanio": "1 vaso",
     "peso": 200,
     "gramos": 12,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 90
   },
   {
     "name": "Helado Light “Mimos”",
     "tamanio": "1 bola",
     "peso": 70,
     "gramos": 18,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 120
   },
   {
     "name": "Paleta Light Robin Hood",
     "tamanio": "1 unidad",
     "peso": 60,
     "gramos": 20,
-    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS"
+    "categoria": "LÁCTEOS Y BEBIDAS LÁCTEAS",
+    "calorias": 80
   },
   {
     "name": "Arroz con pollo",
     "tamanio": "1 taza",
     "peso": 170,
     "gramos": 38,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 310
   },
   {
     "name": "Pizza congelada “Zenú”",
     "tamanio": "1 tajada mediana",
     "peso": 130,
     "gramos": 35,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 320
   },
   {
     "name": "Lasagna congelada “Zénú”",
     "tamanio": "1 porción mediana",
     "peso": 445,
     "gramos": 47,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 480
   },
   {
     "name": "Nuggets de pollo “Zenú”",
     "tamanio": "5 unidades",
     "peso": 85,
     "gramos": 14,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 190
   },
   {
     "name": "Aborrajado sin dulce “Kalisto”",
     "tamanio": "1 unidad pequeña",
     "peso": 112,
     "gramos": 20,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 200
   },
   {
     "name": "Tamal santandereano sin hoja",
     "tamanio": "1 unidad mediana",
     "peso": 200,
     "gramos": 75,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 350
   },
   {
     "name": "Tamal tolimense sin hojas",
     "tamanio": "1 unidad mediana",
     "peso": 325,
     "gramos": 60,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 500
   },
   {
     "name": "Cereal All Bran",
     "tamanio": "6 cdas rasas",
     "peso": 40,
     "gramos": 30,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 135
   },
   {
     "name": "Tostada Bimbo",
     "tamanio": "2 unidades",
     "peso": 31,
     "gramos": 21,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 110
   },
   {
     "name": "Paleta de agua “Mimos”",
     "tamanio": "1 unidad",
     "peso": 70,
     "gramos": 4,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 55
   },
   {
     "name": "Papas de paquete “Margarita”",
     "tamanio": "1 paquete",
     "peso": 25,
     "gramos": 12,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 140
   },
   {
     "name": "Rosquitas Cronch",
     "tamanio": "1 paquete",
     "peso": 19,
     "gramos": 13,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 110
   },
   {
     "name": "Tajaditas de plátano Natuchip",
     "tamanio": "1 paquete",
     "peso": 28,
     "gramos": 20,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 160
   },
   {
     "name": "Insta Cream",
     "tamanio": "1 sobre",
     "peso": 4,
     "gramos": 3,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 15
   },
   {
     "name": "Choco Lyne",
     "tamanio": "1 pastilla",
     "peso": 4,
     "gramos": 2,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 20
   },
   {
     "name": "Choco Lyne polvo",
     "tamanio": "2 cdas rasas",
     "peso": 2,
     "gramos": 15,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 60
   },
   {
     "name": "Choco Express",
     "tamanio": "1 cdita polvo",
     "peso": 4,
     "gramos": 2,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 18
   },
   {
     "name": "Mani",
     "tamanio": "1 paquete",
     "peso": 70,
     "gramos": 15,
-    "categoria": "ALIMENTOS PROCESADOS"
+    "categoria": "ALIMENTOS PROCESADOS",
+    "calorias": 410
   },
   {
     "name": "Gaseosa normal",
     "tamanio": "1 botella",
     "peso": 400,
     "gramos": 42,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 168
   },
   {
     "name": "Té",
     "tamanio": "1 botella",
     "peso": 500,
     "gramos": 35,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 140
   },
   {
     "name": "Cerveza",
     "tamanio": "1 vaso",
     "peso": 200,
     "gramos": 7.4,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 90
   },
   {
     "name": "Vino blanco",
     "tamanio": "1 copa pequeña",
     "peso": 50,
     "gramos": 0.8,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 42
   },
   {
     "name": "Vino tinto",
     "tamanio": "1 copa pequeña",
     "peso": 50,
     "gramos": 1.7,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 43
   },
   {
     "name": "Champagne",
     "tamanio": "1 copa pequeña",
     "peso": 50,
     "gramos": 2.1,
-    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS"
+    "categoria": "BEBIDAS GASEOSAS Y ALCOHOLICAS",
+    "calorias": 48
+  },
+  {
+    "name": "Huevo cocido",
+    "tamanio": "1 unidad mediana",
+    "peso": 50,
+    "gramos": 0.6,
+    "categoria": "PROTEÍNAS",
+    "calorias": 78
+  },
+  {
+    "name": "Pechuga de pollo asada (sin piel)",
+    "tamanio": "1 porción mediana",
+    "peso": 85,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 140
+  },
+  {
+    "name": "Carne magra de res cocida",
+    "tamanio": "1 porción mediana",
+    "peso": 85,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 180
+  },
+  {
+    "name": "Atún en agua (enlatado)",
+    "tamanio": "½ lata",
+    "peso": 56,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 66
+  },
+  {
+    "name": "Tofu firme",
+    "tamanio": "½ taza",
+    "peso": 126,
+    "gramos": 2.3,
+    "categoria": "PROTEÍNAS",
+    "calorias": 183
+  },
+  {
+    "name": "Queso fresco tipo campesino",
+    "tamanio": "1 tajada delgada",
+    "peso": 40,
+    "gramos": 0.8,
+    "categoria": "PROTEÍNAS",
+    "calorias": 106
+  },
+  {
+    "name": "Pechuga de pavo cocida",
+    "tamanio": "1 porción mediana",
+    "peso": 85,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 135
+  },
+  {
+    "name": "Clara de huevo cocida",
+    "tamanio": "2 unidades",
+    "peso": 66,
+    "gramos": 0.4,
+    "categoria": "PROTEÍNAS",
+    "calorias": 34
+  },
+  {
+    "name": "Lomo de cerdo cocido",
+    "tamanio": "1 porción mediana",
+    "peso": 85,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 180
+  },
+  {
+    "name": "Pescado blanco (tilapia) al horno",
+    "tamanio": "1 filete pequeño",
+    "peso": 90,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 100
+  },
+  {
+    "name": "Atún en aceite de oliva (enlatado)",
+    "tamanio": "½ lata",
+    "peso": 56,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 120
+  },
+  {
+    "name": "Atún en aceite de girasol (enlatado)",
+    "tamanio": "½ lata",
+    "peso": 56,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 130
+  },
+  {
+    "name": "Chicharrón",
+    "tamanio": "100 g cocidos",
+    "peso": 100,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 544
+  },
+  {
+    "name": "Costillas de cerdo",
+    "tamanio": "100 g cocidos",
+    "peso": 100,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 300
+  },
+  {
+    "name": "Carne de cerdo empanizada (milanesa frita)",
+    "tamanio": "100 g cocidos",
+    "peso": 100,
+    "gramos": 8,
+    "categoria": "PROTEÍNAS",
+    "calorias": 340
+  },
+  {
+    "name": "Sobrebarriga de res",
+    "tamanio": "100 g cocidos",
+    "peso": 100,
+    "gramos": 0,
+    "categoria": "PROTEÍNAS",
+    "calorias": 210
+  },
+  {
+    "name": "Hígado de res",
+    "tamanio": "100 g cocidos",
+    "peso": 100,
+    "gramos": 4,
+    "categoria": "PROTEÍNAS",
+    "calorias": 145
+  },
+  {
+    "name": "Huevo Frito",
+    "tamanio": "1 unidad grande (tipo omelette)",
+    "peso": 50,
+    "gramos": 0.8,
+    "categoria": "PROTEÍNAS",
+    "calorias": 100
   }
 ]

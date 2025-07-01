@@ -27,6 +27,8 @@ export class ListaChoComponent implements OnInit {
     fechaInicio: Date;
     fechaFin: Date;
 
+    acordeonAbierto: boolean[] = [];
+
     constructor() { }
 
     firebaseSvc = inject(FirebaseService);
@@ -47,6 +49,7 @@ export class ListaChoComponent implements OnInit {
     }
 
     getReport() {
+        this.reportes = []; // Limpia antes de cargar
         let path = `users/${this.user().uid}/registroCho`;
         let sub = this.firebaseSvc.getCollectionData(path).subscribe({
             next: (res: any) => {
@@ -60,12 +63,10 @@ export class ListaChoComponent implements OnInit {
     }
 
     groupAndSortReportes(reportes: FormRegistro[]): { [key: string]: FormRegistro[] } {
-        // Group by date
-        const grouped = groupBy(reportes, (registro) => registro.fecha?.toString());
-        // Sort and round within each date group
-        Object.keys(grouped).forEach(date => {
-            grouped[date] = grouped[date].map(registro => {
-                // Redondear valores numéricos
+        // Agrupa solo por fecha
+        const grouped = groupBy(reportes, (registro) => registro.fecha);
+        Object.keys(grouped).forEach(key => {
+            grouped[key] = grouped[key].map(registro => {
                 registro.totalCho = Math.round(registro.totalCho);
                 registro.tblGlucometria.forEach(glucometria => {
                     glucometria.nivelGlucosa = Math.round(glucometria.nivelGlucosa);
@@ -76,9 +77,6 @@ export class ListaChoComponent implements OnInit {
                     insulina.insulinaGlucometria = Math.round(insulina.insulinaGlucometria);
                 });
                 return registro;
-            }).sort((a, b) => {
-                const order = ["Desayuno", "Almuerzo", "Comida"];
-                return order.indexOf(a.comida) - order.indexOf(b.comida);
             });
         });
         return grouped;
@@ -89,7 +87,7 @@ export class ListaChoComponent implements OnInit {
         const fechaFinStr = this.fechaFin.toISOString().split('T')[0];
 
         this.filteredGroupedReportes = Object.keys(this.groupedReportes)
-            .filter(date => date >= fechaInicioStr && date <= fechaFinStr)
+            .filter(key => key >= fechaInicioStr && key <= fechaFinStr)
             .reduce((obj, key) => {
                 obj[key] = this.groupedReportes[key];
                 return obj;
@@ -126,4 +124,43 @@ export class ListaChoComponent implements OnInit {
         this.fechaFin = today;
       }
 
+      getTotalCaloriasComida(registro: FormRegistro): number {
+        if (!registro.tblComida) return 0;
+        return registro.tblComida.reduce((total, comida) => total + (Number(comida.caloriasPorcion) || 0), 0);
+      }
+
+      getTotalChoDia(registros: FormRegistro[]): number {
+        return registros.reduce((total, reg) => total + (Number(reg.totalCho) || 0), 0);
+    }
+    getTotalCaloriasDia(registros: FormRegistro[]): number {
+        return registros.reduce((total, reg) => total + this.getTotalCaloriasComida(reg), 0);
+    }
+    getTotalInsulinaDia(registros: FormRegistro[]): number {
+        return registros.reduce((total, reg) => total + (reg.tblInsulinas?.[0]?.insulinaTotal || 0), 0);
+    }
+
+      keyDesc = (a: any, b: any): number => {
+        // Extrae la fecha de la clave (antes del "_")
+        const fechaA = a.key.split('_')[0];
+        const fechaB = b.key.split('_')[0];
+        // Ordena descendente
+        return fechaA < fechaB ? 1 : fechaA > fechaB ? -1 : 0;
+      };
+
+      getColorClass(value: number, type: 'cho' | 'calorias' | 'insulina'): string {
+        // Puedes ajustar estos rangos según tus necesidades reales
+        let min = 0, max = 0;
+        if (type === 'cho') { min = 0; max = 200; }
+        if (type === 'calorias') { min = 0; max = 2500; }
+        if (type === 'insulina') { min = 0; max = 30; }
+
+        const percent = Math.min(1, Math.max(0, (value - min) / (max - min)));
+        if (percent < 0.33) return 'valor-verde';
+        if (percent < 0.66) return 'valor-amarillo';
+        return 'valor-rojo';
+      }
+
+      toggleAcordeon(index: number) {
+        this.acordeonAbierto[index] = !this.acordeonAbierto[index];
+      }
 }

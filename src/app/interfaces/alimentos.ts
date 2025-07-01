@@ -4,4 +4,5 @@ export interface Alimento {
     peso: number;
     gramos: number;
     categoria: string;
+    calorias: number;
   }

@@ -7,16 +7,15 @@
 }
 
 .reporte-fecha {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .fecha-titulo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  margin: 24px 0 12px 0;
+  font-size: 1.3em;
+  color: #2a3b8f;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .reporte-item {
@@ -60,93 +59,153 @@
 }
 
 
-/* Estilos generales */
-.reporte-card {
-  margin: 20px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+/* Card de comida */
+.comida-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  background: #f8faff;
+  padding: 12px 0 18px 0;
 }
 
-.reporte-fecha {
-  margin-bottom: 20px;
+/* Info general */
+.info-row {
+  margin-bottom: 0.5em;
 }
 
-.fecha-titulo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+.info-header {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #1a237e;
+  margin-bottom: 0.5em;
 }
 
-.reporte-item {
-  background-color: #f9f9f9;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.reporte-row {
-  margin-bottom: 10px;
-}
-
-.reporte-col {
+.info-box {
+  flex: 1 1 0;
+  margin: 0 2px;
+  min-width: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  padding: 4px 0;
 }
 
-.comida {
-  font-weight: bold;
-  font-size: 1.1rem;
+.info-label {
+  font-size: 0.85em;
+  color: #607d8b;
+  margin-bottom: 1px;
+  font-weight: 400;
 }
 
-.cho-total,
-.glucometria,
-.insulina {
-  font-size: 1rem;
+.info-value {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 36px;
+  text-align: center;
 }
 
-.cho-total {
-  color: #FF5733;
-}
+.info-box.cho .info-value { color: #388e3c; }
+.info-box.glucometria .info-value { color: #1976d2; }
+.info-box.insulina .info-value { color: #e65100; }
 
-.glucometria {
-  color: #33A1FF;
-}
-
-.insulina {
-  color: #33FF57;
-}
-
-
-.filtro-card {
-  margin: 20px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.filtro-row {
+.info-row-horizontal {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  align-items: stretch;
+  margin-bottom: 0.5em;
 }
 
-.filtro-label {
+.info-row-horizontal .info-box {
+  flex: 1 1 0;
+  margin: 0 2px;
+  min-width: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.aplicar-label {
-  margin-right: 10px;
+
+/* Tabla de alimentos */
+.alimentos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-.aplicar-button {
-  flex-grow: 1; /* Hace que el botón ocupe todo el espacio disponible horizontalmente */
-  margin: 0 auto; /* Centra el botón horizontalmente dentro del contenedor */
-  max-width: 200px; /* Establece un ancho máximo para el botón */
+.alimentos-table th, .alimentos-table td {
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.alimentos-table th {
+  background: #f4f6fb;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.alimentos-table tr:not(.total-row):hover {
+  background: #f7faff;
+}
+
+.alimentos-table td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.alimentos-table .total-row td {
+  background: #f0f4ff;
+  font-weight: bold;
+  color: #2a3b8f;
+  border-bottom: none;
+}
+
+.fecha-header {
+  background: #f4f6fb;
+  border-radius: 10px;
+  padding: 16px 12px 10px 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.totales-dia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.totales-dia span {
+  font-size: 1.08em;
+  font-weight: 500;
+}
+
+.valor-verde {
+  color: #2ecc40;
+  background: #e8f5e9;
+}
+
+.valor-amarillo {
+  color: #ffb300;
+  background: #fffde7;
+}
+
+.valor-rojo {
+  color: #e53935;
+  background: #ffebee;
 }

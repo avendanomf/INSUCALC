@@ -4,4 +4,6 @@ export interface User {
   password: string;
   name: string;
   image: string;
+  ratio: number;
+  sensibilidad: number;
 }

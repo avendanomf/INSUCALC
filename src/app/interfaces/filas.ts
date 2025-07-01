@@ -4,5 +4,6 @@ export interface Fila {
     pesoTabla: string;
     choTabla: string;
     gramosCarbohidratos: string;
+    caloriasPorcion?: string; // <-- Agrega esta línea
   }
   
