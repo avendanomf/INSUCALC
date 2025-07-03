@@ -7,10 +7,10 @@ import { AlimentosService } from 'src/app/services/alimentos.service';
   templateUrl: './registro-alimentos.component.html',
   styleUrls: ['./registro-alimentos.component.scss'],
 })
+
 export class RegistroAlimentosComponent implements OnInit {
-  filas: any[] = [
-    // { name: '', pesoGramos: '', pesoTabla: '', choTabla: '', gramosCarbohidratos: '' }
-  ];
+  // Declaración de variables
+  filas: any[] = [];
   newFila: any = { name: '', pesoGramos: '', pesoTabla: '', choTabla: '', gramosCarbohidratos: '' };
   alimentos: Alimento[] = [];
   keyword = 'name';
@@ -19,18 +19,22 @@ export class RegistroAlimentosComponent implements OnInit {
   isModalOpen: boolean = false;
   showResults: boolean = false;
   searchQuery: string = '';
+  selectedOption: string = 'buscar'; // Inicializar opción seleccionada
   @Output() totalCHOEvent = new EventEmitter<any[]>();
+  @Output() totalCaloriasEvent = new EventEmitter<number>();
 
   @ViewChild('itemTemplate', { static: true }) itemTemplate: any;
   @ViewChild('notFoundTemplate', { static: true }) notFoundTemplate: any;
 
   selectedItem: Alimento | undefined;
 
+  public results: Alimento[] = [];
+
   constructor(private alimentosService: AlimentosService, private renderer: Renderer2) {
     this.cargarListcomidas();
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   cargarListcomidas() {
     this.alimentosService.getAllAlimentos().subscribe(data => {
@@ -44,23 +48,28 @@ export class RegistroAlimentosComponent implements OnInit {
   }
 
   closeModal() {
-    this.newFila.name = "";
-    this.newFila.pesoTabla = "";
-    this.newFila.choTabla = "";
-    this.searchQuery = "";
-
+    this.newFila = { name: '', pesoGramos: '', pesoTabla: '', choTabla: '', gramosCarbohidratos: '' };
+    this.searchQuery = '';
     this.isModalOpen = false;
   }
 
   addFila() {
-    if (this.newFila.name && this.newFila.pesoGramos) {
+    if (this.selectedOption === 'buscar' && this.newFila.name && this.newFila.pesoGramos) {
       this.calcularCHO(this.newFila);
-      this.filas.push({ ...this.newFila });
-      this.newFila = { name: '', pesoGramos: '', pesoTabla: '', choTabla: '', gramosCarbohidratos: '' };
-      this.searchQuery = ''; // Clear the search query when adding a row
-      this.calcularTotalCHO();
-      this.closeModal();
     }
+
+    if (this.selectedOption === 'manual' && this.newFila.name && this.newFila.gramosCarbohidratos) {
+      // Si no se ingresan calorías, calcularlas a partir del CHO
+      if (!this.newFila.caloriasPorcion || this.newFila.caloriasPorcion === '') {
+        this.newFila.caloriasPorcion = (parseFloat(this.newFila.gramosCarbohidratos) * 4).toFixed(2);
+      }
+    }
+
+    this.filas.push({ ...this.newFila });
+    this.newFila = { name: '', pesoGramos: '', pesoTabla: '', choTabla: '', gramosCarbohidratos: '', caloriasPorcion: '' };
+    this.searchQuery = '';
+    this.calcularTotalCHO();
+    this.closeModal();
   }
 
   quitarFila(index: number) {
@@ -72,7 +81,8 @@ export class RegistroAlimentosComponent implements OnInit {
     this.newFila.name = item.name;
     this.newFila.pesoTabla = item.peso;
     this.newFila.choTabla = item.gramos;
-    this.searchQuery = item.name; // Set the search query to the selected item's name
+    this.newFila.caloriasTabla = item.calorias; // Nuevo campo
+    this.searchQuery = item.name;
     this.showResults = false;
   }
 
@@ -82,25 +92,44 @@ export class RegistroAlimentosComponent implements OnInit {
     } else {
       fila.gramosCarbohidratos = '0.00';
     }
+    this.calcularCalorias(fila); // <-- Agrega esta línea
     this.calcularTotalCHO();
   }
 
+  calcularCalorias(fila: any) {
+    if (fila.pesoGramos && fila.caloriasTabla && fila.pesoTabla) {
+      fila.caloriasPorcion = ((fila.pesoGramos * fila.caloriasTabla) / fila.pesoTabla).toFixed(2);
+    } else {
+      fila.caloriasPorcion = '0.00';
+    }
+  }
+
   calcularTotalCHO() {
-    const totalCHO = this.filas.reduce((total, fila) => total + (parseFloat(fila.gramosCarbohidratos.replace(',', '.')) || 0), 0).toFixed(2);
+    const totalCHO = this.filas.reduce((total, fila) => {
+      const cho = typeof fila.gramosCarbohidratos === 'string'
+        ? parseFloat(fila.gramosCarbohidratos.replace(',', '.'))
+        : Number(fila.gramosCarbohidratos) || 0;
+      return total + cho;
+    }, 0).toFixed(2);
+
+    const totalCalorias = this.filas.reduce((total, fila) => total + (parseFloat(fila.caloriasPorcion) || 0), 0);
     this.totalCHOEvent.emit(this.filas);
+    this.totalCaloriasEvent.emit(totalCalorias);
   }
 
   restaurarCampos() {
-    console.log("entro desde padre");
     this.filas = [];
     this.alimentos = [];
   }
 
-  public results: Alimento[] = [];
-
   handleInput(event: any) {
-    const query = event.target.value.toLowerCase();
-    this.results = this.alimentos.filter(d => d.name.toLowerCase().includes(query));
+    const normalize = (str: string) =>
+      str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+    const query = normalize(event.target.value);
+    this.results = this.alimentos.filter(d =>
+      normalize(d.name).includes(query)
+    );
     this.showResults = this.results.length > 0;
   }
 }

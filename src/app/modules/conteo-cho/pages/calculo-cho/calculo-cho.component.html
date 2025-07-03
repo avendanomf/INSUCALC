@@ -31,7 +31,7 @@
                 </div>
             </ion-item>
 
-            <ion-card [ngClass]="{'segment-container-table': true, 'error': !registro.totalCHO}">
+            <ion-card [ngClass]="{'segment-container-table': true, 'error': !registro.totalCho}">
                 <ion-card-header>
                     <ion-title>Registro</ion-title>
                 </ion-card-header>
@@ -47,9 +47,18 @@
                         <ion-item lines="none">
                             <ion-label position="stacked">Total CHO:</ion-label>
                             <br>
-                            <ion-input type="number" [(ngModel)]="registro.totalCHO" readonly></ion-input>
+                            <ion-input type="number" [(ngModel)]="registro.totalCho" readonly></ion-input>
                         </ion-item>
                     </ion-col>
+                    <ion-col size="6">
+                        <ion-item lines="none">
+                            <ion-label position="stacked">Total Calorías:</ion-label>
+                            <br>
+                            <ion-input type="number" [value]="totalCalorias" readonly></ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
                     <ion-col size="6">
                         <ion-item lines="none">
                             <ion-label position="stacked">Insulina x CHO:</ion-label>
@@ -101,6 +110,13 @@
 
 <ion-modal [keepContentsMounted]="true">
     <ng-template>
-        <ion-datetime id="datetime" [value]="fechaRegistro.toISOString()" (ionChange)="($event)"></ion-datetime>
+        <ion-datetime id="datetime" [value]="fechaRegistro.toISOString()" (ionChange)="($event)" presentation="date"
+        [formatOptions]="{
+          date: {
+            weekday: 'long',
+            month: 'long',
+            day: '2-digit',
+          }
+        }"></ion-datetime>
     </ng-template>
 </ion-modal>

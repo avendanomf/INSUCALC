@@ -5,6 +5,6 @@ export class Glucometrias {
 
     constructor( ){
         this.horaRegistro = "";
-        this.nivelGlucosa = 0; 
+        // this.nivelGlucosa = ; 
     } 
 }

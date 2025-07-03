@@ -5,7 +5,6 @@ import { CalculoChoComponent } from './pages/calculo-cho/calculo-cho.component';
 import { ConteoChoRoutingModule } from './conteo-cho-routing.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ResgitroComidasComponent } from 'src/app/components/resgitro-comidas/resgitro-comidas.component';
 import { RegistroAlimentosComponent } from 'src/app/components/registro-alimentos/registro-alimentos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AutocompleteLibModule } from 'angular-ng-autocomplete';
@@ -17,7 +16,6 @@ import { MainPageModule } from 'src/app/pages/main/main.module';
 @NgModule({
   declarations: [
     CalculoChoComponent,
-    ResgitroComidasComponent,
     RegistroAlimentosComponent
   ],
   imports: [
